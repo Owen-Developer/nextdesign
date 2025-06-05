@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/515deb5b82.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> <!-- favicon.png -->
+    <title>NextDesign | Website Design & Development</title>
+</head>
+<body>
+    <div class="grid-container">
+        <img class="grid-img" src="images/hero-grid.png" />
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-header">
+            <div class="menu-logo">NextDesign</div>
+
+            <div class="menu-icon" onclick="closeMenu()">
+                <i class="fa-solid fa-x menu-x"></i>
+            </div>
+        </div>
+
+        <div class="menu-label">Browse Our Pages</div>
+        <div class="menu-nav">
+            <a onclick="closeMenu()" href="#about" class="menu-link">About Us</a>
+            <a onclick="closeMenu()" href="#services" class="menu-link">Services</a>
+            <a onclick="closeMenu()" href="#work" class="menu-link">Our Work</a>
+            <a onclick="closeMenu()" href="#contact" class="menu-link">Contact Us</a>
+            <a onclick="closeMenu()" href="#book-call" class="menu-link">Book A Call</a>
+        </div>
+
+        <div class="menu-label">Get To Know Us</div>
+        <div class="menu-btn-flex">
+            <div class="btn-menu btn-contact">Contact Us</div>
+            <div class="btn-menu btn-story">Our Story</div>
+        </div>
+
+        <div class="menu-social">
+            <a href="https://www.instagram.com/nextdesign.website/" class="menu-social-wrapper"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="menu-social-wrapper"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="menu-social-wrapper"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:nextdesign.website@gmail.com" class="menu-social-wrapper"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="menu-copy">© 2025, Next Design. All rights reserved.</div>
+    </div>
+
+    <div class="header" id="home">
+        <div class="bg-blur"></div>
+        <div class="header-bg"></div>
+        <div class="header-flex">
+            <a href="index.html" class="header-logo">NextDesign</a>
+
+            <div class="header-nav">
+                <a href="#about" class="header-link-box">About Us
+                    <div class="header-link hl1">About Us</div>
+                    <div class="header-link hl2">About Us</div>
+                </a>
+                <a href="#services" class="header-link-box">Services
+                    <div class="header-link hl1">Services</div>
+                    <div class="header-link hl2">Services</div>
+                </a>
+                <a href="#work" class="header-link-box">Our Work
+                    <div class="header-link hl1">Our Work</div>
+                    <div class="header-link hl2">Our Work</div>
+                </a>
+                <a href="#contact" class="header-link-box">Contact Us
+                    <div class="header-link hl1">Contact Us</div>
+                    <div class="header-link hl2">Contact Us</div>
+                </a>
+                <a href="#book-call" class="header-link-box">Book A Call
+                    <div class="header-link hl1">Book A Call</div>
+                    <div class="header-link hl2">Book A Call</div>
+                </a>
+            </div>
+
+            <div class="header-btn-flex">
+                <a href="#contact" class="btn-header btn-talk">Let's Talk <i class="fa-regular fa-envelope btn-envelope"></i></a>
+                <div class="menu-icon" onclick="openMenu()">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-container">
+        <div class="mobile-grid">
+            <img class="mobile-grid-img" src="images/hero-grid.png" />
+        </div>
+
+        <div class="home-content">
+            <div class="home-info"><i class="fa-solid fa-code"></i> Web Design & Development</div>
+            <div class="home-title">Websites That Look As<br> Good As They Perform</div>
+            <div class="home-para">We design clean, modern websites that load fast, look sharp, and give your business a strong, trustworthy online presence.</div>
+            <div class="home-btn-flex">
+                <a href="#about" class="btn-home btn-get">About Us <img src="https://framerusercontent.com/images/KGBGzYWGFzd2YuqSAtLBdE3Y.svg" class="btn-arrow" /></a>
+                <a href="#work" class="btn-home btn-projects">Our Work <img src="https://framerusercontent.com/images/KGBGzYWGFzd2YuqSAtLBdE3Y.svg" class="btn-arrow btn-arrow-rotated" /></a>
+            </div>
+        </div>
+
+        <div class="home-card">
+            <div class="card-holder">
+                <div class="home-img-container card-active">
+                    <div class="card-shadow shadow-blank"></div>
+                    <img src="images/hero/hero3.png" class="home-img" />
+                </div>
+                <div class="home-img-container card-dormant">
+                    <div class="card-shadow"></div>
+                    <img src="images/hero/hero5.png" class="home-img img-disabled" />
+                </div>
+                <div class="home-img-container card-disabled">
+                    <div class="card-shadow"></div>
+                    <img src="images/hero/hero4.png" class="home-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="info-col">
+            <div class="info-icon-wrapper">
+                <i class="fa-solid fa-code info-icon"></i>
+            </div>
+            <div class="info-head">Custom-Coded Websites</div>
+            <div class="info-para">We build every site from scratch—clean, fast, and tailored precisely to your business goals.</div>
+        </div>
+        <div class="info-col">
+            <div class="info-icon-wrapper">
+                <i class="fa-solid fa-palette info-icon"></i>
+            </div>
+            <div class="info-head">Modern, Clean Aesthetics</div>
+            <div class="info-para">We design sleek, modern layouts that reflect your brand and engage your visitors instantly.</div>
+        </div>
+        <div class="info-col">
+            <div class="info-icon-wrapper">
+                <i class="fa-solid fa-coins info-icon"></i>
+            </div>
+            <div class="info-head">Built For Any Budget</div>
+            <div class="info-para">Get professional results without high costs — no budget is too small to work with us.</div>
+        </div>
+    </div>
+
+    <div class="abt-bg" id="about">
+        <div class="abt-container">
+            <div class="abt-content">
+                <div class="abt-title scroll-target">About Us</div>
+    
+                <div class="abt-para scroll-target">We’re Finley and Owen — two young entrepreneurs passionate about crafting sleek, modern websites that drive real results, and elevate brands online.<br><br>
+                <span class="abt-desc">At <b>NEXT DESIGN</b>, we blend business expertise with cutting-edge web development to create websites that not only look great but help your business grow. Finley handles the client side with real-world business experience, while Owen leads development with a strong background in computer science and design. We started <b>NEXT DESIGN</b> to help small businesses and professionals build a powerful online presence — with clear communication, personal service, and results that speak for themselves.</span></div>
+            </div>
+    
+            <div class="bar-flex">
+                <div class="bar-col">
+                    <div class="bar-stat">0% <span class="bar-out">/ 100%</span></div>
+                    <div class="bar-wrapper"></div>
+                </div>
+                <div class="bar-col">
+                    <div class="bar-stat">0% <span class="bar-out">/ 100%</span></div>
+                    <div class="bar-wrapper"></div>
+                </div>
+                <div class="bar-col">
+                    <div class="bar-stat">0% <span class="bar-out">/ 100%</span></div>
+                    <div class="bar-wrapper"></div>
+                </div>
+                <div class="bar-col">
+                    <div class="bar-stat">0% <span class="bar-out">/ 100%</span></div>
+                    <div class="bar-wrapper"></div>
+                </div>
+                <div class="bar-col">
+                    <div class="bar-stat">0% <span class="bar-out">/ 100%</span></div>
+                    <div class="bar-wrapper"></div>
+                </div>
+            </div>
+            <div class="bar-axis"></div>
+            <div class="bar-low">
+                <div class="bar-label">Client Satisfaction</div>
+                <div class="bar-label">User Duration Increase</div>
+                <div class="bar-label">Loading Speed</div>
+                <div class="bar-label">CTA Clicks</div>
+                <div class="bar-label">Repeat Clients</div>
+
+                <div class="bar-label mbar-label">Client Success</div>
+                <div class="bar-label mbar-label">User Duration</div>
+                <div class="bar-label mbar-label">Load Speed</div>
+                <div class="bar-label mbar-label">CTA Clicks</div>
+                <div class="bar-label mbar-label">Repeat Clients</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="serv-bg" id="services">
+        <div class="serv-container">
+            <div class="serv-top">
+                <div class="serv-content">
+                    <div class="serv-title">Our Services</div>
+                    <div class="serv-para">From design to development, we build websites that are responsive, optimized, and made to grow your brand.</div>
+                </div>
+                <a href="#contact" class="btn-serv btn-top">Get in Touch <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+            </div>
+
+            <div class="serv-flex">
+                <div class="serv-card">
+                    <div class="serv-icon-wrapper"><i class="fa-solid fa-pencil serv-icon"></i></div>
+                    <div class="serv-head">Website Design</div>
+                    <div class="serv-desc">We design modern, user-focused websites that look great, perform well, and match your brand.</div>
+                    <div class="serv-ques">What is included in this service?</div>
+                    <a href="#book-call" class="btn-serv">Schedule Discussion <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+                </div>
+                <div class="serv-card">
+                    <div class="serv-icon-wrapper"><i class="fa-solid fa-code serv-icon"></i></div>
+                    <div class="serv-head">Website Development</div>
+                    <div class="serv-desc">We build fast, functional websites using clean code and innovative development practices.</div>
+                    <div class="serv-ques">What is included in this service?</div>
+                    <a href="#book-call" class="btn-serv">Schedule Discussion <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+                </div>
+                <div class="serv-card">
+                    <div class="serv-icon-wrapper"><i class="fa-solid fa-mobile-screen-button serv-icon"></i></div>
+                    <div class="serv-head">Responsive Design</div>
+                    <div class="serv-desc">Every website we make works perfectly on desktops, tablets, phones, and all screen sizes.</div>
+                    <div class="serv-ques">What is included in this service?</div>
+                    <a href="#book-call" class="btn-serv">Schedule Discussion <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+                </div>
+            </div>
+            <div class="serv-flex">
+                <div class="serv-card">
+                    <div class="serv-icon-wrapper"><i class="fa-solid fa-fingerprint serv-icon"></i></div>
+                    <div class="serv-head">Social Media Managment</div>
+                    <div class="serv-desc">We manage your social media to grow engagement, build community, and maintain consistency.</div>
+                    <div class="serv-ques">What is included in this service?</div>
+                    <a href="#book-call" class="btn-serv">Schedule Discussion <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+                </div>
+                <div class="serv-card">
+                    <div class="serv-icon-wrapper"><i class="fa-solid fa-gauge serv-icon"></i></div>
+                    <div class="serv-head">Speed Optimization</div>
+                    <div class="serv-desc">We optimize every page for fast loading, smooth performance, and a better user experience.</div>
+                    <div class="serv-ques">What is included in this service?</div>
+                    <a href="#book-call" class="btn-serv">Schedule Discussion <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+                </div>
+                <div class="serv-card">
+                    <div class="serv-icon-wrapper"><i class="fa-solid fa-wrench serv-icon"></i></div>
+                    <div class="serv-head">Website Maintenance</div>
+                    <div class="serv-desc">We keep your website secure, updated, and running without issues or unexpected downtime.</div>
+                    <div class="serv-ques">What is included in this service?</div>
+                    <a href="#book-call" class="btn-serv">Schedule Discussion <i class="fa-solid fa-chevron-right serv-chev"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-bg" id="work">
+        <div class="work-container">
+            <div class="work-top">
+                <div class="work-title scroll-target">Discover Our Work</div>
+                <div class="work-para scroll-target">Explore our work and see the results we've delivered. Visit <a target="_blank" href="https://www.instagram.com/nextdesign.website/">our portfolio</a> on Instagram for more examples of our web design projects.</div>
+            </div>
+
+            <div class="work-box scroll-target">
+                <div class="work-content">
+                    <div class="work-head">Dysons Heating - Heating <br>& Plumbing Company</div>
+                    <a href="https://www.instagram.com/nextdesign.website/" class="work-link">View Portfolio</a>
+                    <div class="work-desc">This website build focuses on increasing trust, clarity, and accessibility for Dyson’s Heating, a reliable local provider of heating and plumbing services in the UK.</div>
+                    <div class="work-tag-flex">
+                        <div class="work-tag">Modern Design</div>
+                        <div class="work-tag">Multi-Page</div>
+                        <div class="work-tag">Branding</div>
+                    </div>
+                    <a target="_blank" href="https://dysonsheating.co.uk" class="btn-work">Visit Website <img src="https://framerusercontent.com/images/KGBGzYWGFzd2YuqSAtLBdE3Y.svg" class="work-arrow" /></a>
+                </div>
+
+                <div class="work-img-container">
+                    <img src="images/work/Dyson Project.png" class="work-img" />
+                </div>
+            </div>
+            <div class="work-box scroll-target">
+                <div class="work-content">
+                    <div class="work-head">Artic Sounds - Music Licensing</div>
+                    <a href="https://www.instagram.com/nextdesign.website/" class="work-link">View Portfolio</a>
+                    <div class="work-desc">This project focuses on creating a clean, professional platform for Artic Sounds — a music licensing service offering high-quality audio for content creators. The goal was to improve user navigation, and highlight licensing options clearly.</div>
+                    <div class="work-tag-flex">
+                        <div class="work-tag">Clean Layout</div>
+                        <div class="work-tag">Music Platform</div>
+                        <div class="work-tag">SaaS</div>
+                    </div>
+                    <a target="_blank" href="https://artic-sounds.netlify.app/" class="btn-work">Visit Website <img src="https://framerusercontent.com/images/KGBGzYWGFzd2YuqSAtLBdE3Y.svg" class="work-arrow" /></a>
+                </div>
+
+                <div class="work-img-container">
+                    <img src="images/work/Artic Sounds Project.png" class="work-img" />
+                </div>
+            </div>
+            <div class="work-box scroll-target" style="margin-bottom: 0;">
+                <div class="work-content">
+                    <div class="work-head">MidlineCo – Smarter Tech Solutions</div>
+                    <a href="https://www.instagram.com/nextdesign.website/" class="work-link">View Portfolio</a>
+                    <div class="work-desc">This design portrays MidlineCo as an innovative tech agency, focusing on clarity, professionalism, and a seamless user experience across all devices and platforms.</div>
+                    <div class="work-tag-flex">
+                        <div class="work-tag">Tech Agency</div>
+                        <div class="work-tag">Minimalist</div>
+                        <div class="work-tag">Fast-Loading</div>
+                    </div>
+                    <a target="_blank" href="https://midlineco.netlify.app/" class="btn-work">Visit Website <img src="https://framerusercontent.com/images/KGBGzYWGFzd2YuqSAtLBdE3Y.svg" class="work-arrow" /></a>
+                </div>
+
+                <div class="work-img-container">
+                    <img src="images/work/3.png" class="work-img" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+    <div class="plan-bg">
+        <div class="plan-container">
+
+            <div class="scroll-target">
+                <div class="plan-title">Plans and Pricing</div>
+                <div class="plan-para">Choose a plan that suits your business. We offer simple, affordable pricing — or <span class="plan-para">request a custom package tailored to you.</span></div>
+            </div>
+
+            <div class="plan-flex">
+                <div class="plan-wrapper scroll-target">
+                    <div class="plan-head">Starter Plan</div>
+                    <div class="plan-price">£299 <span>£25/month</span></div>
+                    <div class="plan-desc">Great for startups—includes everything you need to get online without extra complexity.</div>
+                    <a href="#contact">
+                        <div class="btn-plan">Get Started Now</div>
+                    </a>
+                    <div class="plan-label">PLAN FEATURES</div>
+                    <div class="plan-feat">
+                        <div class="feat-flex">
+                            <div class="feat-tick"><i class="fa-solid fa-check tick-icon"></i></div>
+                            <div class="feat-txt">1-page scrolling website</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick"><i class="fa-solid fa-check tick-icon"></i></div>
+                            <div class="feat-txt">Basic design</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick"><i class="fa-solid fa-check tick-icon"></i></div>
+                            <div class="feat-txt">Mobile-optimized</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick"><i class="fa-solid fa-check tick-icon"></i></div>
+                            <div class="feat-txt">Contact form</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick"><i class="fa-solid fa-check tick-icon"></i></div>
+                            <div class="feat-txt">Monthly updates + support</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick"><i class="fa-solid fa-check tick-icon"></i></div>
+                            <div class="feat-txt">Fully Custom-coded</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plan-wrapper mid-plan scroll-target">
+                    <div class="plan-most">Most Popular!</div>
+
+                    <div class="plan-head plan-white">Business Plan</div>
+                    <div class="plan-price plan-white">£499 <span class="mid-month">£50/month</span></div>
+                    <div class="plan-desc plan-white">Perfect for businesses looking to grow with a professional, multi-page website.</div>
+                    <a href="#contact">
+                        <div class="btn-plan btn-plan-mid">Start Your Project</div>
+                    </a>
+                    <div class="plan-label plan-label-mid">PLAN FEATURES</div>
+                    <div class="plan-feat">
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">All starter plan features</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Up to 5 pages</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Modern Design</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Contact form + Google Maps</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Monthly updates + support</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Basic SEO</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plan-wrapper end-plan scroll-target">
+                    <div class="plan-head plan-white">Premium Plan</div>
+                    <div class="plan-price plan-white">£749 <span class="mid-month">£75/month</span></div>
+                    <div class="plan-desc plan-white">Suited for brands requiring premium-grade design and backend systems.</div>
+                    <a href="#contact">
+                        <div class="btn-plan btn-plan-mid">Contact Our Team</div>
+                    </a>
+                    <div class="plan-label plan-label-mid">PLAN FEATURES</div>
+                    <div class="plan-feat">
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">All business plan features</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Unlimited pages</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Backend systems</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Professional Design</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Monthly reports</div>
+                        </div>
+                        <div class="feat-flex">
+                            <div class="feat-tick feat-tick-mid"><i class="fa-solid fa-check tick-icon plan-white"></i></div>
+                            <div class="feat-txt plan-white">Priority support</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="plan-cust">
+                <div class="cust-col">
+                    <div class="cust-head">Need a Tailored Solution?</div>
+                    <div class="cust-para">Our pricing isn’t set in stone. Reach out for a bespoke package designed to suit your business.</div>
+                </div>
+
+                <div class="cust-nav">
+                    <a href="#contact">
+                        <div class="btn-cust btn-inq">Send inquiry</div>
+                    </a>
+                    <a href="#book-call">
+                        <div class="btn-cust btn-stra">Book a call</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+
+    <div class="get-bg" id="contact">
+        <div class="get-container scroll-target">
+            <div class="get-flex">
+                <div class="get-col">
+                    <div class="get-title">Get in Touch</div>
+                    <div class="get-para">Have a project in mind? Send us a message — we’ll get to you back shortly.</div>
+
+                    <div class="box-col">
+                        <a target="_blank" href="mailto:nextdesign.website@gmail.com" class="get-box">
+                            <div class="get-icon-wrapper"><i class="fa-regular fa-envelope get-icon"></i></div>
+                            <div class="get-details">
+                                <div class="get-label">Email Us</div>
+                                <div class="get-txt">nextdesign.website@gmail.com</div>
+                            </div>
+                            
+                            <div class="get-arr-wrapper"><i class="fa-solid fa-arrow-right get-arr"></i></div>
+                        </a>
+                        <a target="_blank" href="tel:07746979517" class="get-box">
+                            <div class="get-icon-wrapper"><i class="fa-solid fa-phone-volume get-icon"></i></div>
+                            <div class="get-details">
+                                <div class="get-label">Call Us</div>
+                                <div class="get-txt">077 4697 9517</div>
+                            </div>
+                            
+                            <div class="get-arr-wrapper"><i class="fa-solid fa-arrow-right get-arr"></i></div>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/nextdesign.website/" class="get-box">
+                            <div class="get-icon-wrapper"><i class="fa-brands fa-instagram get-icon get-insta"></i></div>
+                            <div class="get-details">
+                                <div class="get-label">Instagram</div>
+                                <div class="get-txt">@nextdesign.website</div>
+                            </div>
+
+                            <div class="get-arr-wrapper"><i class="fa-solid fa-arrow-right get-arr"></i></div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="get-col">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="get-form"> <!-- 366eaa81-c067-4df5-ba8f-17848466c1bb -->
+                        <input type="hidden" name="access_key" value="366eaa81-c067-4df5-ba8f-17848466c1bb" />
+
+                        <input type="text" name="name" placeholder="Name" class="get-input" required/>
+                        <input type="text" name="email" placeholder="Email" class="get-input" required/>
+                        <textarea class="get-area" name="message" placeholder="Message" required></textarea>
+
+                        <button class="btn-form" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot-bg" id="book-call">
+        <div class="foot-container">
+            <div class="foot-top">
+                <div class="ftop-left">
+                    <div class="foot-colab">
+                        <div class="colab-dot"></div>
+                        <div class="colab-txt">Open for any collaboration</div>
+                    </div>
+                    <div class="foot-title">Book a free consultation now to discover how we can help your business to thrive!</div>
+                    <a href="#contact" class="btn-foot">Get started today <img src="https://framerusercontent.com/images/KGBGzYWGFzd2YuqSAtLBdE3Y.svg" class="foot-arrow" /></a>
+                </div>
+
+                <!-- 
+                <div class="calendly-inline-widget calender" data-url="https://calendly.com/nextdesign-website/30min?hide_gdpr_banner=1"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                -->
+
+
+                    <div class="ftop-right">
+                        <div class="ftop-right-col">
+                            <div class="foot-label">Email address</div>
+                            <a target="_blank" href="mailto:nextdesign.website@gmail.com" class="foot-txt">nextdesign.website@gmail.com</a>
+                        </div>
+                        <div class="ftop-right-col">
+                            <div class="foot-label">Phone number</div>
+                            <a target="_blank" href="tel:07746979517" class="foot-txt">077 4697 9517</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="foot-bot">
+                <div class="fbot-left">
+                    <div class="foot-para">Discover NextDesign, an agency speicializing in web design and development. Elevate your brand's online presence with our tailored services.</div>
+                    <div class="foot-label">Get in touch:</div>
+                    <div class="foot-social-flex">
+                        <a target="_blank" href="mailto:nextdesign.website@gmail.com" class="foot-social"><i class="fa-regular fa-envelope foot-social-icon"></i></a>
+                        <a target="_blank" href="tel:07746979517" class="foot-social"><i class="fa-solid fa-phone foot-social-icon"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/nextdesign.website/" class="foot-social"><i class="fa-brands fa-instagram foot-social-icon"></i></a>
+                        <a target="_blank" href="#" class="foot-social"><i class="fa-brands fa-linkedin-in foot-social-icon"></i></a>
+                    </div>
+                </div>
+
+                <div class="foot-nav">
+                    <div class="foot-nav-col">
+                        <div class="foot-label">Navigation</div>
+                        <a href="#home" class="foot-txt">Homepage</a>
+                        <a href="#about" class="foot-txt">About us</a>
+                        <a href="#services" class="foot-txt">Our services</a>
+                        <a href="#work" class="foot-txt">Projects</a>
+                        <a href="#contact" class="foot-txt">Contact us</a>
+                    </div>
+                    <div class="foot-nav-col">
+                        <div class="foot-label">Our Services</div>
+                        <div class="foot-txt">Web Design</div>
+                        <div class="foot-txt">Web Development</div>
+                        <div class="foot-txt">Branding</div>
+                        <div class="foot-txt">Speed Optimization</div>
+                        <div class="foot-txt">Website Maintenance</div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-copy">Copyright © 2025 NextDesign. All Rights Reserved.</div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
