@@ -5,6 +5,7 @@ const homeImgContainer = document.querySelectorAll(".home-img-container");
 const menuContainer = document.querySelector(".menu-container");
 
 let currentWidth = window.innerWidth;
+let isCtaActivated = false;
 let headerStatus = [true, true, true, true, true];
 let linkActivity = [false, false, false, false, false];
 let heroStatus = [true, false, false];
@@ -46,6 +47,18 @@ headerLinkBox.forEach((box, idx) => {
         }); 
     });
 });
+
+document.addEventListener("scroll", () => {
+    if(!isCtaActivated){
+        document.querySelector(".cta-fixed").style.opacity = "1";
+        document.querySelector(".cta-fixed").style.pointerEvents = "auto";
+        isCtaActivated = true;
+    }
+});
+function closeCta(){
+    document.querySelector(".cta-fixed").style.opacity = "0";
+    document.querySelector(".cta-fixed").style.pointerEvents = "none";
+}
 
 setInterval(() => {
     // BEFORE UPCOMING CHANGES
