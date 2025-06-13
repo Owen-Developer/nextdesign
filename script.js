@@ -8,7 +8,7 @@ let currentWidth = window.innerWidth;
 let isCtaActivated = false;
 let headerStatus = [true, true, true, true, true];
 let linkActivity = [false, false, false, false, false];
-let heroStatus = [true, false, false];
+let heroStatus = [true, false, false, false];
 let barStats = [96, 56, 82, 76, 65];
 
 headerLinkBox.forEach((box, idx) => {
@@ -61,26 +61,38 @@ function closeCta(){
 }
 
 setInterval(() => {
+    // -> WAITING -> DISABLED -> DORMANT -> ACTIVE ->
+
     // BEFORE UPCOMING CHANGES
     let activeContainer;
     let dormantContainer;
     let disabledContainer;
+    let waitingContainer;
     if(heroStatus[0]){
-        activeContainer = homeImgContainer[0];
-        dormantContainer = homeImgContainer[1];
+        waitingContainer = homeImgContainer[3];
         disabledContainer = homeImgContainer[2];
-        heroStatus = [false, true, false];
+        dormantContainer = homeImgContainer[1];
+        activeContainer = homeImgContainer[0];
+        heroStatus = [false, true, false, false]; // AFTER CHANGES
     } else if(heroStatus[1]){
-        activeContainer = homeImgContainer[1];
+        waitingContainer = homeImgContainer[0];
+        disabledContainer = homeImgContainer[3];
         dormantContainer = homeImgContainer[2];
-        disabledContainer = homeImgContainer[0];
-        heroStatus = [false, false, true];
+        activeContainer = homeImgContainer[1];
+        heroStatus = [false, false, true, false];
     } else if(heroStatus[2]){
+        waitingContainer = homeImgContainer[1];
+        disabledContainer = homeImgContainer[0];
+        dormantContainer = homeImgContainer[3];
         activeContainer = homeImgContainer[2];
-        dormantContainer = homeImgContainer[0];
+        heroStatus = [false, false, false, true];
+    } else if(heroStatus[3]){
+        waitingContainer = homeImgContainer[2];
         disabledContainer = homeImgContainer[1];
-        heroStatus = [true, false, false];
-    }
+        dormantContainer = homeImgContainer[0];
+        activeContainer = homeImgContainer[3];
+        heroStatus = [true, false, false, false];
+    } 
 
     activeContainer.style.transform = "scale(1.02)";
     activeContainer.style.opacity = "0";
